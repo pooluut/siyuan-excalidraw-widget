@@ -1,0 +1,19 @@
+{
+    "name": "siyuan-excalidraw-widget",
+    "author": "pooluut",
+    "url": "https://github.com/pooluut/siyuan-excalidraw-widget",
+    "version": "2.0.0",
+    "displayName": {
+        "default": "siyuan-excalidraw-widget"
+    },
+    "description": {
+        "default": "基于excalidraw的画图挂件"
+    },
+    "readme": {
+        "default": "README.md"
+    },
+    "i18n": [
+        "zh_CN"
+    ],
+    "funding": {}
+}
