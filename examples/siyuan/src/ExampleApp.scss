@@ -1,0 +1,62 @@
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative; // 添加相对定位作为基准
+}
+
+
+.checkbox-container {
+  position: absolute; // 使用绝对定位
+  top: 1px;          // 距离顶部20px
+  right: 1px;        // 距离右侧20px
+  z-index: 1000;      // 确保在其他元素之上
+}
+
+// 隐藏 Library的字，省空间
+.excalidraw .default-sidebar-trigger .sidebar-trigger__label {
+  display: none !important;
+}
+
+// 底下的 全隐藏了
+.excalidraw .App-menu_bottom {
+  display: none !important;
+}
+
+// 把 设置 画风类型 隐藏了，不喜欢手写的风格
+.excalidraw fieldset:has(input[name="sloppiness"]) {
+  display: none !important;
+}
+
+
+// 顶部隐藏左边的 三
+.excalidraw .yc_main_menu {
+  display: none !important;
+}
+
+.excalidraw{
+  .App-menu_top {
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-gap: 0rem;
+
+    @media (min-width: 1536px) {
+      grid-template-columns: 0fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  .App-menu_top > *:second-child {
+    justify-self: flex-start;
+  }
+
+}
+
+
+
