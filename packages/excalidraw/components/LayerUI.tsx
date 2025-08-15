@@ -201,7 +201,7 @@ const LayerUI = ({
   };
 
   const renderCanvasActions = () => (
-    <div style={{ position: "relative" }}>
+    <div className="yc_main_menu" style={{ position: "relative" }}>
       {/* wrapping to Fragment stops React from occasionally complaining
                 about identical Keys */}
       <tunnels.MainMenuTunnel.Out />
@@ -222,7 +222,9 @@ const LayerUI = ({
         style={{
           // we want to make sure this doesn't overflow so subtracting the
           // approximate height of hamburgerMenu + footer
-          maxHeight: `${appState.height - 166}px`,
+          // 因为隐藏了下面的bottom menu 和上面的 三，需要填充上下空间
+          marginTop: 60,
+          maxHeight: `${appState.height - 166 + 70}px`,
         }}
       >
         <SelectedShapeActions
