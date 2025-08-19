@@ -1,3 +1,5 @@
+【deprecated】 move to https://gitee.com/pooluut/siyuan-excalidraw-widget
+
 # project description
 
 This is a customized excalidraw widget for Siyuan Note. With customizing changes:
